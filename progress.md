@@ -1,65 +1,67 @@
-## 📍 Checkpoint 3: Grow Module Implementation & UI Refinement
+## ✅ Checkpoint 5 — Find (Explore Resources)
 
-### ✅ Overview
-
-Implemented the **Grow module** to support user development through jobs, skills, and mentorship. Focused on creating a structured and scalable UI with smooth navigation.
-
----
-
-### 🚀 Key Features Implemented
-
-* **Tabbed Interface**
-
-  * Integrated Jobs, Skills, and Mentors into a unified tab system
-  * Enabled seamless switching between sections
-
-* **Modular Architecture**
-
-  * Separated components into:
-
-    * `JobsPage`
-    * `SkillsPage`
-    * `MentorsPage`
-  * Improved maintainability and scalability
-
-* **Hero Section Design**
-
-  * Added visually engaging banner with gradient overlay
-  * Introduced clear heading and supporting description
-
-* **UI/UX Enhancements**
-
-  * Responsive layout for different screen sizes
-  * Smooth animations using Framer Motion
-  * Clean typography and spacing improvements
+### 💡 Feature Overview
+We implemented a **Smart Resource Navigator** that helps users quickly find trusted and relevant support instead of browsing long static lists.
 
 ---
 
-### 🛠 Tech Stack Used
-
-* React + TypeScript
-* Tailwind CSS
-* Framer Motion (for animations)
-* shadcn/ui (Tabs component)
-
----
-
-### 🔧 Improvements & Refactoring
-
-* Refactored component structure for better readability
-* Standardized class naming and layout consistency
-* Added semantic structure and accessibility improvements (alt text, sectioning)
+### 🔍 Categories
+- 🏥 Healthcare
+- ⚖️ Legal Aid
+- 💛 Safe Spaces
+- 🚨 Helplines
 
 ---
 
-### 📌 Outcome
+### 🧠 Guided Flow (Key Innovation)
+Instead of directly showing data, we guide users step-by-step:
 
-Successfully built a **clean, modular, and user-friendly Grow page** that integrates career opportunities, skill-building, and mentorship into a single interface.
+- Healthcare → Mental health / Hormone therapy / General doctor
+- Legal → Name change / ID correction / Legal rights
+
+This reduces confusion and makes the system easier to use.
 
 ---
 
-### 🔜 Next Steps
+### ⚙️ Technical Implementation
+- Built using **Next.js (App Router)**
+- Data managed in **Supabase (resources table)**
+- Dynamic filtering using:
+  - category
+  - sub_category
+  - city
+- Fallback logic ensures results are always shown
+- Realtime updates supported via Supabase subscriptions
 
-* Integrate backend (Supabase / APIs)
-* Add dynamic job & mentor recommendations
-* Personalization using AI
+---
+
+### 📍 Location Awareness
+- Resources filtered based on user city
+- If no match → fallback to all resources
+
+---
+
+### ⚡ Quick Help (High Impact)
+- 🚨 Instant helpline access
+- 🤖 AI chatbot support
+
+---
+
+### 🔐 Trust Layer
+- Verified NGO-based data
+- Source tagging (ngo/manual/api)
+- Focus on safe and inclusive resources
+
+---
+
+### 🎯 Impact
+- Helps users quickly access relevant support
+- Reduces overwhelm during critical situations
+- Makes the platform practical and real-world usable
+
+---
+
+## 🚀 Current Status
+- Feature fully implemented and functional
+- Backend (Supabase) integrated with realtime support
+- UI consistent with overall application design
